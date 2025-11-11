@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIAI - Laboratorio de Invenciones Aplicadas a la Industria | UAZ</title>
+  <meta name="description"
+    content="Laboratorio de Invenciones Aplicadas a la Industria (LIAI) de la Universidad Autónoma de Zacatecas">
+  <link rel="icon" type="image/svg+xml" href="logos/favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html#hero">
+          <img src="logos/Logotipo.png" alt="LIAI Logo" class="logo-image">
+          <img src="logos/logoLIAI.jpg" alt="LIAI Logo secundario" class="logo-image-secundario">
+        </a>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">
+              <span class="dropdown-text">LIAI</span>
+              <span class="dropdown-text-short">LIAI</span>
+              <i class="fas fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#acerca">Acerca</a></li>
+              <li><a href="#campos">Campos de Acción</a></li>
+              <li><a href="#publicaciones">Publicaciones</a></li>
+              <li><a href="#propiedad">Propiedad Industrial</a></li>
+              <li><a href="#integrantes">Integrantes</a></li>
+              <li><a href="#colaboradores">Colaboradores</a></li>
+              <li><a href="#estudiantes">Estudiantes</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">
+              <span class="dropdown-text">Cuerpo Académico</span>
+              <span class="dropdown-text-short">CA</span>
+              <i class="fas fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="cuerpo_academico.html#descripcion">Descripción</a></li>
+              <li><a href="cuerpo_academico.html#proyectos">Proyectos y Vinculación</a></li>
+              <li><a href="cuerpo_academico.html#identificacion">Identificación</a></li>
+              <li><a href="cuerpo_academico.html#vision-mision">Visión y Misión</a></li>
+              <li><a href="cuerpo_academico.html#lgac">Líneas de Investigación</a></li>
+              <li><a href="cuerpo_academico.html#integrantes-ca">Integrantes</a></li>
+              <li><a href="cuerpo_academico.html#produccion-academica">Producción Académica</a></li>
+            </ul>
+          </li>
+          <li><a href="#contacto" class="contact-btn"><i class="fas fa-headset" title="Contacto"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-carousel">
+        <div class="carousel-container">
+          <div class="carousel-slide active" style="background-image: url('logos/uazFoto.jpeg')">
+            <div class="carousel-content">
+              <h1>Laboratorio de Invenciones Aplicadas a la Industria</h1>
+              <p>Innovación y desarrollo tecnológico al servicio de la sociedad</p>
+              <a href="#acerca" class="btn btn-primary">Conocer más</a>
+            </div>
+          </div>
+          <div class="carousel-slide"
+            style="background-image: url('logos/imagenForma.jpg')">
+            <div class="carousel-content">
+              <h1>Formación e Investigación</h1>
+              <p>Promovemos la innovación a través de proyectos aplicados</p>
+              <a href="#campos" class="btn btn-primary">Nuestros campos</a>
+            </div>
+          </div>
+          <div class="carousel-slide"
+            style="background-image: url('https://images.pexels.com/photos/159775/library-la-trobe-study-students-159775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+            <div class="carousel-content">
+              <h1>Colaboración académica</h1>
+              <p>Vinculando estudiantes, docentes e industria en proyectos innovadores</p>
+              <a href="#colaboradores" class="btn btn-primary">Nuestro equipo</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+          <div class="carousel-indicators">
+            <button class="indicator active" data-slide="0" aria-label="Slide 1"></button>
+            <button class="indicator" data-slide="1" aria-label="Slide 2"></button>
+            <button class="indicator" data-slide="2" aria-label="Slide 3"></button>
+          </div>
+          <button class="next" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="acerca" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Acerca del Laboratorio</h2>
+          <div class="section-separator mx-auto"></div>
+        </div>
+
+        <div class="bg-white p-4 rounded shadow-sm mb-5">
+          <p class="lead mb-4">
+            <strong>El Laboratorio de Invenciones Aplicadas a la Industria (LIAI)</strong> es un centro de
+            investigación y desarrollo orientado a generar soluciones tecnológicas innovadoras para sectores
+            estratégicos como el agroindustrial, el manufacturero y el educativo.
+          </p>
+
+          <div class="row g-4">
+            <div class="col-md-6">
+              <p>Vinculado a la Universidad Autónoma de Zacatecas, el laboratorio impulsa la colaboración entre
+                academia, industria y sociedad, articulando ciencia, ingeniería y creatividad aplicada.</p>
+              <p>Con un enfoque multidisciplinario, el LIAI trabaja en inteligencia artificial, visión por computadora,
+                automatización, electrónica industrial y cómputo de alto desempeño.</p>
+            </div>
+            <div class="col-md-6">
+              <p>El laboratorio se ha consolidado como un espacio de formación de talento, protección de invenciones y
+                vinculación tecnológica. Su proyección internacional se refleja en colaboraciones con instituciones de
+                América y Asia.</p>
+              <p class="mb-0">El LIAI representa un puente entre el conocimiento y la solución de problemas reales,
+                contribuyendo a una industria más eficiente, sostenible y tecnológicamente avanzada.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="bg-white p-4 rounded shadow-sm h-100">
+              <h3 class="h4 mb-3">Visión</h3>
+              <p class="mb-0">Impulsar soluciones tecnológicas innovadoras que transformen procesos productivos en
+                modelos más eficientes, resilientes y sostenibles, conectando talentos, industrias y territorios a
+                través de la colaboración internacional.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="bg-white p-4 rounded shadow-sm h-100">
+              <h3 class="h4 mb-3">Misión</h3>
+              <p class="mb-0">Diseñar, desarrollar y transferir soluciones tecnológicas innovadoras con base científica,
+                integrando inteligencia artificial y sistemas inteligentes para fortalecer los sectores productivos y
+                formar talento especializado.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="bg-white p-4 rounded shadow-sm h-100">
+              <h3 class="h4 mb-3">Valores</h3>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Innovación con propósito</li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Ciencia útil y aplicada</li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Interdisciplinariedad creativa</li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Colaboración estratégica</li>
+                <li class="mb-0"><i class="fas fa-check text-success me-2"></i> Excelencia con sentido humano</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Campos de Acción -->
+    <section id="campos" class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Investigación y Desarrollo</h2>
+          <div class="section-separator"></div>
+          <h2 class="section-subtitle">Campos de Investigación</h2>
+        </header>
+
+        <div class="text-center">
+          <span class="tab-btn">Agrotecnología</span>
+          <span class="tab-btn">Civiltrónica</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publicaciones" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Publicación de Artículos</h2>
+          <div class="section-separator"></div>
+          <p class="section-subtitle">Recientes</p>
+        </div>
+        <div class="publications-list-wrapper">
+          <ul class="publications-list">
+            <li class="publication-item">
+              <div class="publication-info">
+                <strong>Design and Implementation of a Low-Cost Controlled-Environment Growth Chamber for Vegetative
+                  Propagation of Mother Plants.</strong>
+                <div class="publication-meta">
+                  AgriEngineering 2025,
+                  <a href="https://doi.org/10.3390/agriengineering7060177" target="_blank" rel="noopener">DOI</a>
+                </div>
+              </div>
+            </li>
+            <li class="publication-item">
+              <div class="publication-info">
+                <strong>Low-Scalability Distributed Systems for Artificial Intelligence: A Comparative Study of
+                  Distributed Deep Learning Frameworks for Image Classification.</strong>
+                <div class="publication-meta">
+                  Appl. Sci. 2025,
+                  <a href="https://doi.org/10.3390/app15116251" target="_blank" rel="noopener">DOI</a>
+                </div>
+              </div>
+            </li>
+            <li class="publication-item">
+              <div class="publication-info">
+                <strong>AI-Driven Plant Health Assessment: A Comparative Analysis of Inception V3, ResNet-50 and ViT
+                  with SHAP for Accurate Disease Identification in Taro.</strong>
+                <div class="publication-meta">
+                  Agronomy 2025,
+                  <a href="https://doi.org/10.3390/agronomy15010077" target="_blank" rel="noopener">DOI</a>
+                </div>
+              </div>
+            </li>
+
+            <p class="section-subtitle">Más citados</p>
+
+            <li class="publication-item">
+              <div class="publication-info">
+                <strong>Comparison of Convolutional Neural Network Architectures for Classification of Tomato Plant
+                  Diseases.</strong>
+                <div class="publication-meta">
+                  Appl. Sci. 2020,
+                  <a href="https://doi.org/10.3390/app10041245" target="_blank" rel="noopener">DOI</a>
+                </div>
+              </div>
+            </li>
+            <li class="publication-item">
+              <div class="publication-info">
+                <strong>Effects of Colored Light on Growth and Nutritional Composition of Tilapia, and Biofloc as a Food
+                  Source.</strong>
+                <div class="publication-meta">
+                  Appl. Sci. 2020,
+                  <a href="https://doi.org/10.3390/app10010362" target="_blank" rel="noopener">DOI</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Propiedad Industrial -->
+    <section id="propiedad" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Propiedad Industrial</h2>
+          <div class="section-separator"></div>
+        </div>
+        <div class="section-content">
+          <p>El LIAI fomenta la innovación con registros de propiedad industrial:</p>
+          <ul>
+            <li><strong>Modelo de utilidad:</strong> Cámara modular para esquejes (IMPI, en proceso de registro 2025).
+            </li>
+            <li><strong>Modelo de utilidad:</strong> Cámara de crecimiento para la producción de forraje verde
+              hidropónico.</li>
+            <li><strong>Módulo evaporador/absorbedor</strong> para sistemas de refrigeración por absorción.</li>
+            <li><strong>Próximos registros internacionales</strong> a través de la OMPI.</li>
+          </ul>
+          <p>El laboratorio trabaja con un enfoque de transferencia tecnológica, buscando que las invenciones se
+            conviertan en soluciones prácticas para la industria y la agroindustria.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Líneas de Investigación y Desarrollo -->
+    <section class="py-3">
+      <div class="container">
+        <div class="section-header mb-2">
+          <h2 class="section-title mb-2">Líneas de Investigación y Desarrollo</h2>
+        </div>
+        <div class="row justify-content-center text-center g-3">
+          <div class="col-md-2">
+            <div class="p-3 bg-white rounded shadow-sm">
+              <div class="mb-2 text-info">
+                <i class="fas fa-microchip fa-2x"></i>
+              </div>
+              <h5 class="mb-0">Computación de Alto Desempeño</h5>
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="p-3 bg-white rounded shadow-sm">
+              <div class="mb-2 text-info">
+                <i class="fas fa-robot fa-2x"></i>
+              </div>
+              <h5 class="mb-0">Inteligencia Artificial Aplicada</h5>
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="p-3 bg-white rounded shadow-sm">
+              <div class="mb-2 text-success">
+                <i class="fas fa-tractor fa-2x"></i>
+              </div>
+              <h5 class="mb-0">Tecnología Agroalimentaria</h5>
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="p-3 bg-white rounded shadow-sm">
+              <div class="mb-2 text-warning">
+                <i class="fas fa-tools fa-2x"></i>
+              </div>
+              <h5 class="mb-0">Diseño funcional y prototipado</h5>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Collaborators Section -->
+      <section id="integrantes" class="section section-alt">
+          <div class="container">
+              <div class="section-header">
+                  <h2 class="section-title">Integrantes</h2>
+                  <div class="section-separator"></div>
+              </div>
+              <div class="team-grid">
+                  <div class="team-card">
+                      <div class="team-info">
+                          <h3>Dr. Carlos Alberto Olvera Olvera</h3>
+                          <p class="team-position">Profesor Investigador Responsable</p>
+
+                          <div class="team-social">
+                              <a href="https://scholar.google.es/citations?user=RU-icqUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Perfil de Google Scholar">
+                                  <i class="fa-solid fa-graduation-cap"></i>
+                              </a>
+
+                              <a href="https://www.scopus.com/authid/detail.uri?authorId=57798298100" target="_blank" rel="noopener noreferrer" aria-label="Perfil de Scopus">
+                                  <i class="fa-solid fa-file-lines"></i>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="team-card">
+                      <div class="team-info">
+                          <h3>Dr. Manuel de Jésus López Martínez</h3>
+                          <p class="team-position">Profesor Investigador Asociado</p>
+
+                          <div class="team-social">
+                              <a href="https://scholar.google.com/citations?hl=es&user=KXg5WRAAAAAJ&view_op=list_works&authuser=1&sortby=pubdate" target="_blank" rel="noopener noreferrer" aria-label="Perfil de Google Scholar">
+                                  <i class="fa-solid fa-graduation-cap"></i>
+                              </a>
+
+                              <a href="https://www.scopus.com/authid/detail.uri?authorId=58298026200" target="_blank" rel="noopener noreferrer" aria-label="Perfil de Scopus">
+                                  <i class="fa-solid fa-file-lines"></i>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+    <!-- Collaborators Section -->
+      <section id="colaboradores" class="section">
+          <div class="container">
+              <div class="section-header">
+                  <h2 class="section-title">Colaboradores</h2>
+                  <div class="section-separator"></div>
+              </div>
+
+              <div class="team-grid" id="colaboradores-grid">
+              </div>
+          </div>
+      </section>
+
+    <section id="estudiantes" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Estudiantes</h2>
+          <div class="section-separator"></div>
+        </div>
+        <div class="section-content">
+          <div class="team-card">
+            <div class="team-info">
+              <h3>Estudiantes de PosDoctorado</h3>
+              <p class="team-position">Dra. Arantza Elena Sánchez Gutiérrez
+                <span class="ms-4">
+                  <i class="fas fa-robot text-info me-2" title="Inteligencia Artificial Aplicada"></i>
+                  <i class="fas fa-tractor text-success" title="Tecnología Agroalimentaria"></i>
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="py-2"></div>
+          <div class="team-card">
+            <div class="team-info">
+              <h3>Estudiantes Doctorado</h3>
+              <p class="team-position">Jesús Gerardo Ávila Sánchez
+                <span class="ms-4">
+                  <i class="fas fa-microchip text-info me-2" title="Computación de Alto Desempeño"></i>
+                  <i class="fas fa-robot text-info me-2" title="Inteligencia Artificial Aplicada"></i>
+                  <i class="fas fa-tractor text-success me-2" title="Tecnología Agroalimentaria"></i>
+                  <i class="fas fa-tools text-warning" title="Diseño funcional y prototipado"></i>
+                </span>
+              </p>
+              <p class="team-position">Félix Fernando López Aguilera
+                <span class="ms-4">
+                  <i class="fas fa-tractor text-success" title="Tecnología Agroalimentaria"></i>
+                </span>
+              </p>
+              <p class="team-position">Manuel Rivera Escobedo
+                <span class="ms-4">
+                  <i class="fas fa-robot text-info me-2" title="Inteligencia Artificial Aplicada"></i>
+                  <i class="fas fa-tractor text-success" title="Tecnología Agroalimentaria"></i>
+                </span>
+              </p>
+              <p class="team-position">Nancy Mayela Silva Martínez
+                <span class="ms-4">
+                  <i class="fas fa-microchip text-info me-2" title="Computación de Alto Desempeño"></i>
+                  <i class="fas fa-tractor text-success" title="Tecnología Agroalimentaria"></i>
+                </span>
+              </p>
+              <p class="team-position">Jair Nájera Salaices
+                <span class="ms-4">
+                  <i class="fas fa-microchip text-info me-2" title="Computación de Alto Desempeño"></i>
+                  <i class="fas fa-tractor text-success" title="Tecnología Agroalimentaria"></i>
+                </span>
+              </p>
+              <p class="team-position">Ruth Elizabeth Martínez Escobedo
+                <span class="ms-4">
+                  <i class="fas fa-tractor text-success me-2" title="Tecnología Agroalimentaria"></i>
+                  <i class="fas fa-tools text-warning" title="Diseño funcional y prototipado"></i>
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="py-2"></div>
+          <div class="team-card">
+            <div class="team-info">
+              <h3>Estudiantes Maestría</h3>
+              <p class="team-position">José Rosario Guerrero Flores
+                <span class="ms-4">
+                  <i class="fas fa-robot text-info me-2" title="Inteligencia Artificial Aplicada"></i>
+                  <i class="fas fa-tractor text-success" title="Tecnología Agroalimentaria"></i>
+                </span>
+              </p>
+              <p class="team-position">Emmanuel Acosta Salinas
+                <span class="ms-4">
+                  <i class="fas fa-tools text-warning" title="Diseño funcional y prototipado"></i>
+                </span>
+              </p>
+              <p class="team-position">Arturo Molina Almaráz
+                <span class="ms-4">
+                  <i class="fas fa-tractor text-success me-2" title="Tecnología Agroalimentaria"></i>
+                  <i class="fas fa-tools text-warning" title="Diseño funcional y prototipado"></i>
+                </span>
+              </p>
+              <p class="team-position">Carlos Eduardo Olvera Mayorga
+                <span class="ms-4">
+                  <i class="fas fa-microchip text-info me-2" title="Computación de Alto Desempeño"></i>
+                  <i class="fas fa-tools text-warning" title="Diseño funcional y prototipado"></i>
+                </span>
+              </p>
+              <p class="team-position">Valeria Andrea Escobedo Sánchez
+                <span class="ms-4">
+                  <i class="fas fa-tractor text-success me-2" title="Tecnología Agroalimentaria"></i>
+                  <i class="fas fa-tools text-warning" title="Diseño funcional y prototipado"></i>
+                </span>
+              </p>
+              <p class="team-position">Aaron Carrillo Acuña
+                <span class="ms-4">
+                  <i class="fas fa-tractor text-success me-2" title="Tecnología Agroalimentaria"></i>
+                  <i class="fas fa-tools text-warning" title="Diseño funcional y prototipado"></i>
+                </span>
+              </p>
+              <p class="team-position">Gabriel Rodríguez Sustaita
+                <span class="ms-4">
+                  <i class="fas fa-robot text-info me-2" title="Inteligencia Artificial Aplicada"></i>
+                  <i class="fas fa-tractor text-success me-2" title="Tecnología Agroalimentaria"></i>
+                  <i class="fas fa-tools text-warning" title="Diseño funcional y prototipado"></i>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Contáctanos</h2>
+          <div class="section-separator"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Información de contacto -->
+          <div class="contact-info-card">
+            <h3 class="contact-card-title">Información de contacto</h3>
+
+            <div class="contact-method">
+              <div class="contact-method-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-method-content">
+                <h4>Ubicación</h4>
+                <p>Campus UAZ Siglo XXI, Edificio de Ingeniería II<br>Carretera Zacatecas-Guadalajara Km. 6<br>Ejido La
+                  Escondida, Zacatecas, Zac. CP 98160</p>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-method-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-method-content">
+                <h4>Correo electrónico</h4>
+                <p><a href="mailto:liai@uaz.edu.mx" class="contact-link">liai@uaz.edu.mx</a></p>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-method-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-method-content">
+                <h4>Teléfono</h4>
+                <p><a href="tel:+524929256690" class="contact-link">(+52) 492 925 6690</a></p>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-method-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="contact-method-content">
+                <h4>Horario de atención</h4>
+                <p>Lunes a Viernes: 9:00 - 18:00 hrs</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mapa -->
+          <div class="map-card">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.440302771499!2d-102.6459625!3d22.7721344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868251f2614ad3af%3A0xd26d35967e83cb0b!2sUniversidad%20Aut%C3%B3noma%20de%20Zacatecas!5e0!3m2!1ses-419!2smx!4v1715652118000!5m2!1ses-419!2smx"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span>LIAI</span>
+            <span class="logo-separator">|</span>
+            <span class="logo-uaz">UAZ</span>
+          </div>
+          <p class="footer-description">Laboratorio de Invenciones Aplicadas a la Industria</p>
+          <p class="footer-address">Campus UAZ Siglo XXI, Edificio de Ingeniería II<br>Zacatecas, Zac. CP 98160</p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4 class="footer-title">Enlaces Rápidos</h4>
+            <ul class="footer-menu">
+              <li><a href="#acerca">Acerca del LIAI</a></li>
+              <li><a href="#publicaciones">Publicaciones</a></li>
+              <li><a href="#integrantes">Nuestro Equipo</a></li>
+              <li><a href="#estudiantes">Estudiantes</a></li>
+              <li><a href="https://www.uaz.edu.mx" target="_blank" rel="noopener">Portal UAZ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-title">Contacto</h4>
+            <ul class="footer-contact">
+              <li><i class="fas fa-envelope"></i> <a href="mailto:liai@uaz.edu.mx">liai@uaz.edu.mx</a></li>
+              <li><i class="fas fa-phone"></i> <a href="tel:+524929256690">(492) 925 6690</a></li>
+              <li><i class="fas fa-clock"></i> Lunes a Viernes: 9:00 - 18:00 hrs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-legal">
+          <p>&copy; 2025 LIAI - UAZ. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js" type="module"></script>
+  <script src="js/main.js"></script>
+
+  <script src="js/colaboradores.js"></script>
+
+</body>
+</html>
