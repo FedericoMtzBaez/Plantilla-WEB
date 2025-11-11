@@ -90,7 +90,11 @@ Este proyecto utiliza Docker para crear un entorno de producción autocontenido 
     docker-compose up -d --build
    ```
 
-4. **¡Listo! Abre tu navegador y visita http://localhost:8080 para ver el sitio en funcionamiento. 🎉**    
+3. **¡Listo! Abre tu navegador y visita http://localhost:8080 para ver el sitio en funcionamiento. 🎉**
+4. **Comando de Restart**
+    ```bash
+     docker-compose restart 
+   ```
 ## Secciones Principales
 - **Inicio:** Presentación y carrusel de imágenes.
 - **Acerca de:** Información sobre el laboratorio.
