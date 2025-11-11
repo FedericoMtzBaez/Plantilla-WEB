@@ -1,6 +1,6 @@
-# LIAI - Laboratorio de Invenciones Aplicadas a la Industria | UAZ
+# Plantilla para web
 
-Este proyecto es el sitio web oficial del **Laboratorio de Invenciones Aplicadas a la Industria (LIAI)** de la **Universidad Autónoma de Zacatecas (UAZ)**. El sitio está diseñado para mostrar las áreas de especialización, publicaciones, colaboradores, vacantes y proyectos destacados del laboratorio, así como para facilitar el contacto y la difusión de información relevante.
+Breve descripcion de la web
 
 ## Tabla de Contenidos
 - [Descripción General](#descripción-general)
@@ -12,7 +12,7 @@ Este proyecto es el sitio web oficial del **Laboratorio de Invenciones Aplicadas
 - [Contacto](#contacto)
 
 ## Descripción General
-El sitio web está orientado a la difusión de las actividades, investigaciones y logros del LIAI. Permite a los visitantes conocer los campos de acción del laboratorio, consultar publicaciones científicas, explorar vacantes de proyectos y contactar al equipo.
+Descripcion
 
 ## Estructura del Proyecto
 ```
@@ -62,18 +62,10 @@ project/
    git clone <url-del-repositorio>
    cd project
    ```
-2. **Instalar dependencias:**
-   ```bash
-   npm install
-   ```
-3. **Iniciar el servidor de desarrollo:**
-   ```bash
-   npm run dev
-   ```
-4. **Abrir en el navegador:**
-   Visita `http://localhost:5173` (o el puerto que indique Vite).
-## Deploy Final
-## Despliegue con Docker y Nginx 🐳
+
+## Deploy Final con Doccker 🐳
+
+### Despliegue con Docker y Nginx 🐳
 
 Este proyecto utiliza Docker para crear un entorno de producción autocontenido y portátil. Usamos una imagen oficial de Nginx como servidor web por su alta eficiencia y bajo consumo de recursos, ideal para servir sitios estáticos como este.
 
@@ -95,6 +87,18 @@ Este proyecto utiliza Docker para crear un entorno de producción autocontenido 
     ```bash
      docker-compose restart 
    ```
+## Deploy Final con Netlify
+
+``
+
+    Prox
+
+``
+
+
+
+
+
 ## Secciones Principales
 - **Inicio:** Presentación y carrusel de imágenes.
 - **Acerca de:** Información sobre el laboratorio.
@@ -111,8 +115,8 @@ El sitio está gestionado por el equipo del LIAI-UAZ. Para más información sob
 ## Contacto
 Para dudas, sugerencias o contacto institucional, utiliza el formulario en la sección "Contacto" del sitio web o escribe a:
 
-- **Correo:** liai@uaz.edu.mx
-- **Sitio web UAZ:** [https://www.uaz.edu.mx](https://www.uaz.edu.mx)
+- **Correo:** 
+
 
 ---
 
